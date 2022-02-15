@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Misc. Good Co.</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+/* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,  body {
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 100% !important;
+	width: 100% !important;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+/* What it does: Forces Outlook.com to display emails full width. */
+.ExternalClass {
+	width: 100%;
+}
+/* What is does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+	margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,  td {
+	mso-table-lspace: 0pt !important;
+	mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+table {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	table-layout: fixed !important;
+	margin: 0 auto !important;
+}
+table table table {
+	table-layout: auto;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+/* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+.yshortcuts a {
+	border-bottom: none !important;
+}
+/* What it does: Another work-around for iOS meddling in triggered links. */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+}
+</style>
+
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+        
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+        .button-td:hover,
+        .button-a:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+
+            .email-container {
+                width: 100% !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid,
+            .fluid-centered {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+            /* And center justify these ones. */
+            .fluid-centered {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+        
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+                
+        }
+
+    </style>
+    </head>
+    <body bgcolor="#e0e0e0" width="100%" style="margin: 0;" yahoo="yahoo">
+    <table bgcolor="#e0e0e0" cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" style="border-collapse:collapse;" role="presentation">
+      <tr>
+        <td><center style="width: 100%;">
+            
+            <!-- Visually Hidden Preheader Text : BEGIN -->
+          <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;"> (Optional) This text will appear in the inbox preview, but not the email body. </div>
+<span style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+<!--EOA COMMENT: This snippet of white space has been added to ensure short preview text does not run into the following text of your email.-->
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</span>
+            <!-- Visually Hidden Preheader Text : END --> 
+            
+            
+            <!-- Email Body : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#e4c186" width="600" class="email-container" role="presentation">
+              <!-- Hero Image, Flush : BEGIN -->
+              <tr>
+                <td class="full-width-image" align="center" style="padding:40px 0 30px"><img src="https://i.postimg.cc/s202FffK/banner1.png" width="600" alt="Picture of Production" border="0" align="center" style="width: 100%; max-width: 500px; height: auto;"></td>
+              </tr>
+              <!-- Hero Image, Flush : END -->
+              <!-- 1 Column Text : BEGIN -->
+              <tr>
+                <td style="padding: 20px 0 5px; text-align: center; font-family: sans-serif; font-size: 25px; mso-height-rule: exactly; line-height: 40px; color: #555555; font-weight:bold;"> WERN x Misc Goods Hands Salve,<br>
+                  available now exclusively on </td>
+              </tr>
+              <tr>
+                <td align="center" style="color:#ffffff; padding-bottom: 30px; text-align: center; font-family: sans-serif; font-size: 25px; mso-height-rule: exactly;text-decoration: underline;">wesn.com </td>
+              </tr>
+              <!-- 1 Column Text : END -->
+              <!-- 2  Column Text : BEGIN -->
+              <tr>
+                <td height="2" style="background-color: #000000;"></td>
+              </tr>
+              <!-- 2  Column Text: END -->
+              <!-- 3  Column Text : BEGIN -->
+              <tr>
+                <td style="padding: 40px; text-align: center; font-family: sans-serif; font-size: 20px; mso-height-rule: exactly; line-height: 40px; color: #505050 !important"> Early this year our friends over at <strong style="color:#ffffff;text-decoration: underline;">WERN</strong> approached us with an opportunity to collaborate on
+                  one of their Holiday Drops </td>
+              </tr>
+              <!-- 3  Column Text: END -->
+              <!-- 4 Columns : BEGIN -->
+              <tr>
+               <tr>
+                <td class="full-width-image" align="center" style="padding:40px 0 30px"><img src="https://i.postimg.cc/3rGx6HsC/banner2.png" width="600" alt="Polish" border="0" align="center" style="width: 100%; max-width: 500px; height: auto;">
+				</td>
+              </tr>
+              </tr>
+              <!-- 4 Columns : END -->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+              <!-- 5 Columns : BEGIN -->
+              <tr>
+				  <td style="padding: 40px; text-align: center; font-family: sans-serif; font-size: 20px; mso-height-rule: exactly; line-height: 30px; color: #505050 !important; font-weight: 500">
+					 Sparing no detail in design and application, together,
+					  we've put together the perfect blend of coconut oil,
+					  mango butter, and beewax with our classic
+					  Underhill scent that makes for both the perfect
+					  stocking suffer, moisturizer, and defender for the 
+					  hands you love this winter.
+					 
+				  </td>
+                
+              </tr>
+			<tr>
+				<td align="center" style="padding-bottom: 80px;">
+				<!-- Button : Begin -->
+                          <table cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" role="presentation">
+                            <tr>
+                              <td style="border-radius: 10px; background: #222222; text-align: center;" class="button-td"><a href="http://www.google.com" style="background: #222222; border: 15px solid #222222; padding: 0 10px;color: #ffffff; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: underline; display: block; border-radius: 50px; font-weight: bold" class="button-a">
+                                <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                               Grab It While You Can
+                                <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;<![endif]-->
+                              </a></td>
+                            </tr>
+                          </table>
+            <!-- Button : END -->
+				</td>
+			</tr>
+              <!-- 5 Columns : END -->
+
+              <tr>
+				  
+				  <td style="padding:0 0 30px; text-align: center; font-family: sans-serif; font-size: 20px; mso-height-rule: exactly; line-height: 40px; color: #505050 !important">
+					  Unitl next time.
+				  </td>
+				  
+              </tr>
+			<tr>
+				<td style="padding:0 0 30px; text-align: center; font-family: sans-serif; font-size: 20px; mso-height-rule: exactly; line-height: 40px; color: #505050 !important">
+					Best,<br>
+					Tyler Deeb<br>
+					Misc. Goods Co.
+					
+				</td>
+			</tr>
+              <!-- Thumbnail Right, Text Left : END -->
+            </table>
+          <!-- Email Body : END --> 
+            
+            <!-- Email Footer : BEGIN -->
+            <table align="center" width="600" class="email-container" role="presentation">
+            <tr>
+                <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;"><webversion style=" color: #616161 !important; text-decoration:underline; font-weight: bold">View as a Web Page</webversion>
+                <br>
+                <br>
+                Misc. Goods Co. <br>
+                <span class="mobile-link--footer" style=" color: #5f5f5f !important">-1001 West Saint Catherine Street, Louisville, KY 40204, USA</span> <br>
+                <br>
+                <unsubscribe style=" color: #5f5f5f !important; text-decoration:underline">unsubscribe</unsubscribe></td>
+              </tr>
+          </table>
+            <!-- Email Footer : END -->
+            
+          </center></td>
+      </tr>
+    </table>
+</body>
+</html>
